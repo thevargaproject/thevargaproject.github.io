@@ -76,7 +76,6 @@
             font-size: 1.2em;
             color: #FFD700;
         }
-        /* Dodaj rdeči razred za napake */
 
     </style>
 </head>
@@ -119,10 +118,10 @@
                 const decimalMinutes = totalMinutes / 60;
                 const totalDecimalHours = totalHours + decimalMinutes;
 
-                resultElement.innerText = `Razlika: ${totalDecimalHours.toFixed(2)} ur`;
+                resultElement.innerText = `Preračunane ure : ${totalDecimalHours.toFixed(2)} ur`;
                 resultElement.classList.remove('error');
             } else {
-                resultElement.innerText = 'Prosim, vnesite oba časa.';
+                resultElement.innerText = 'Prosim, vnesite obe uri.';
                 resultElement.classList.add('error');
             }
         }
